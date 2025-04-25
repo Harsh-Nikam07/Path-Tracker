@@ -70,7 +70,7 @@ The app uses context-based state management for handling authentication, locatio
 ### 🔧 Backend Setup
 
 ```bash
-git clone https://github.com/yourusername/path-tracker.git
+git clone https://github.com/Harsh-Nikam07/Path-Tracker.git
 cd path-tracker/server
 
 # Install dependencies

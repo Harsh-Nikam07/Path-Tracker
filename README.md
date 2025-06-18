@@ -1,6 +1,7 @@
 # 📍 Path Tracker
 
 A mobile application for tracking and recording your paths/routes with real-time location tracking. Perfect for runners, hikers, cyclists, or anyone who wants to keep a record of their journeys.
+
 ![project-1](https://github.com/user-attachments/assets/a3da7131-6fad-49c6-b696-11a0e1236655)
 
 ---

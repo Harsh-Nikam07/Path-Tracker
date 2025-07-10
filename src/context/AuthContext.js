@@ -60,7 +60,7 @@ const signup = (dispatch) => {
             const response = await trackerAPI.post('/signup', {email, password});
             await AsyncStorage.setItem('token', response.data.token);
             await AsyncStorage.setItem('email', email);
-            dispatch({type: 'signup', 
+            dispatch({type: 'signup',
                 payload : {
                     token : response.data.token,
                     email : email

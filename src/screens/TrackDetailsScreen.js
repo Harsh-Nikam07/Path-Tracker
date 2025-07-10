@@ -96,8 +96,8 @@ const TrackDetailsScreen = ({ route, navigation }) => {
                 }}
                 region={{
                     ...initialCoords,
-                    latitudeDelta: 0.001,
-                    longitudeDelta: 0.001,
+                    latitudeDelta: 0.01,
+                    longitudeDelta: 0.01,
                   }}
                 style={styles.map}
             >
@@ -127,6 +127,7 @@ const TrackDetailsScreen = ({ route, navigation }) => {
 
 const styles = StyleSheet.create({
     container: {
+        width: '100%',
         flex: 1,
         backgroundColor: '#fff',
         padding: 15,
@@ -188,6 +189,7 @@ const styles = StyleSheet.create({
         marginTop: 10
     },
     infoBox: {
+        width: '100%',
         backgroundColor: '#f5f5f5',
         padding: 15,
         borderRadius: 8,

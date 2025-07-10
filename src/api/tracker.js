@@ -4,7 +4,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 
 // Create axios instance with custom base URL
 const instance = axios.create({
-    baseURL : 'https://16d3-2409-40c2-14-2dc9-d43f-c920-e9b-a660.ngrok-free.app'
+    baseURL : 'https://2eb7-2409-40c2-110-bf59-3c5b-4391-66f-3199.ngrok-free.app '
 })
 
 // Add request interceptor to handle authentication

@@ -11,7 +11,11 @@
   },
   "dependencies": {
     "@ant-design/icons": "^5.6.1",
+<<<<<<< HEAD
     "@react-native-async-storage/async-storage": "^2.1.2",
+=======
+    "@react-native-async-storage/async-storage": "^2.1.1",
+>>>>>>> e291a27c1a827b8dc5395918e939590bdb040d0b
     "@react-native-vector-icons/common": "^11.0.0",
     "@react-navigation/bottom-tabs": "^7.2.0",
     "@react-navigation/elements": "^2.2.5",
@@ -30,7 +34,10 @@
     "react-native": "0.76.7",
     "react-native-elements": "^3.4.3",
     "react-native-gesture-handler": "~2.20.2",
+<<<<<<< HEAD
     "react-native-maps": "1.18.0",
+=======
+>>>>>>> e291a27c1a827b8dc5395918e939590bdb040d0b
     "react-native-pager-view": "6.5.1",
     "react-native-paper": "^5.13.1",
     "react-native-reanimated": "~3.16.1",

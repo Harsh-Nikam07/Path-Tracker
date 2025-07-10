@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useContext, useEffect } from 'react';
 import { Button, StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native';
 import { Context as TrackContext } from '../context/TrackContext';
@@ -32,6 +33,16 @@ const TrackListScreen = ({navigation}) => {
                 contentContainerStyle={styles.listContainer}
                 showsVerticalScrollIndicator={false}
             />
+=======
+import React from 'react';
+import { Button, StyleSheet, Text, View } from 'react-native';
+
+const TrackListScreen = ({navigation}) => {
+    return (
+        <View style={styles.container}>
+            <Text style={styles.text}>Track List Screen</Text>
+            <Button title='track details' onPress={() => navigation.navigate('TrackDetail') }/>
+>>>>>>> e291a27c1a827b8dc5395918e939590bdb040d0b
         </View>
     );
 }
@@ -39,6 +50,7 @@ const TrackListScreen = ({navigation}) => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+<<<<<<< HEAD
         backgroundColor: '#fff',
         paddingTop: 60,
         marginBottom: 0
@@ -69,6 +81,17 @@ const styles = StyleSheet.create({
         color: '#2c3e50',
         padding: 16,
     }
+=======
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#f5f5f5',
+    },
+    text: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        color: '#333',
+    },
+>>>>>>> e291a27c1a827b8dc5395918e939590bdb040d0b
 })
 
 export default TrackListScreen;

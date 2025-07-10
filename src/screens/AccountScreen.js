@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useContext, useEffect, useState } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { Context as AuthContext } from '../context/AuthContext';
@@ -40,20 +41,39 @@ const AccountScreen = () => {
         </View>
     );
 };
+=======
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+
+const AccountScreen = () => {
+    return (
+        <View style={styles.container}>
+            <Text style={styles.text}>Account Screen</Text>
+        </View>
+    );
+}
+>>>>>>> e291a27c1a827b8dc5395918e939590bdb040d0b
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+<<<<<<< HEAD
         justifyContent: 'flex-start',
         alignItems: 'flex-start',
         backgroundColor: '#fff',
         padding: 20,
         paddingTop: 60
+=======
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#f5f5f5',
+>>>>>>> e291a27c1a827b8dc5395918e939590bdb040d0b
     },
     text: {
         fontSize: 24,
         fontWeight: 'bold',
         color: '#333',
+<<<<<<< HEAD
         marginBottom: 20
     },
     headingText: {
@@ -78,5 +98,9 @@ const styles = StyleSheet.create({
         fontSize: 18
     }
 });
+=======
+    },
+})
+>>>>>>> e291a27c1a827b8dc5395918e939590bdb040d0b
 
 export default AccountScreen;

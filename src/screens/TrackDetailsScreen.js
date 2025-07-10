@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useContext, useEffect } from 'react';
 import { StyleSheet, Text, View, SafeAreaView, Button } from 'react-native';
 import { Context as TrackContext } from '../context/TrackContext';
@@ -203,3 +204,31 @@ const styles = StyleSheet.create({
 });
 
 export default TrackDetailsScreen;
+=======
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+
+const TrackDetailsScreen = () => {
+    return (
+        <View style={styles.container}>
+            <Text style={styles.text}>Track Details Screen</Text>
+        </View>
+    );
+}
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#f5f5f5',
+    },
+    text: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        color: '#333',
+    },
+})
+
+export default TrackDetailsScreen;
+>>>>>>> e291a27c1a827b8dc5395918e939590bdb040d0b

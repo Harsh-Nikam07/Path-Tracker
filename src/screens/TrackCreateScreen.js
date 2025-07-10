@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useContext, useCallback } from 'react';
 import { SafeAreaView, StyleSheet, Text } from 'react-native';
 import Map from '../components/Map';
@@ -28,19 +29,37 @@ const TrackCreateScreen = ({callback}) => {
         </SafeAreaView>
     );
 };
+=======
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+
+const TrackCreateScreen = () => {
+    return (
+        <View style={styles.container}>
+            <Text style={styles.text}>Track Create Screen</Text>
+        </View>
+    );
+}
+>>>>>>> e291a27c1a827b8dc5395918e939590bdb040d0b
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+<<<<<<< HEAD
         justifyContent: 'flex-start',
         alignItems: 'flex-start',
         backgroundColor: 'white',
         padding: 20,
         paddingTop: 60
+=======
+        justifyContent: 'center',
+        alignItems: 'center',
+>>>>>>> e291a27c1a827b8dc5395918e939590bdb040d0b
     },
     text: {
         fontSize: 20,
         fontWeight: 'bold',
+<<<<<<< HEAD
         color: 'black',
         marginBottom: 20
     },
@@ -49,5 +68,10 @@ const styles = StyleSheet.create({
         marginBottom: 10,
     },
 });
+=======
+        color: 'blue',
+    },
+})
+>>>>>>> e291a27c1a827b8dc5395918e939590bdb040d0b
 
 export default TrackCreateScreen;

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Import required dependencies
 import axios from "axios";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -51,3 +52,10 @@ This is a reusable API configuration setup that can be used in different applica
    - Handle user authentication for social features
    - Add social tokens and user context in headers
 */
+=======
+import axios from "axios";
+
+export default axios.create({
+    baseURL : 'https://359a-223-233-84-241.ngrok-free.app '
+})
+>>>>>>> e291a27c1a827b8dc5395918e939590bdb040d0b

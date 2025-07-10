@@ -8,6 +8,7 @@ import AccountScreen from './src/screens/AccountScreen';
 import TrackListScreen from './src/screens/TrackListScreen';
 import TrackDetailScreen from './src/screens/TrackDetailsScreen';
 import TrackCreateScreen from './src/screens/TrackCreateScreen';
+<<<<<<< HEAD
 import SplashScreen from './src/screens/SplashScreen';
 import { navigationRef } from './src/navigationRef';
 import { Feather } from '@expo/vector-icons';
@@ -17,6 +18,14 @@ import { Provider as TrackProvider } from './src/context/TrackContext';
 //contexts
 import { Provider as LocationProvider } from './src/context/LocationContext';
 import { Provider as AuthProvider } from './src/context/AuthContext';
+=======
+
+import { navigationRef } from './src/navigationRef';
+
+//contexts
+
+import { Provider as AuthProvider } from './src/context/AuthCOntext';
+>>>>>>> e291a27c1a827b8dc5395918e939590bdb040d0b
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -33,7 +42,11 @@ const LoginFlow = () => {
 const TrackListFlow = () => {
   return (
     <Stack.Navigator >
+<<<<<<< HEAD
       <Stack.Screen name='TrackList' component={TrackListScreen} options={{headerShown: false}}/>
+=======
+      <Stack.Screen name='TrackList' component={TrackListScreen}/>
+>>>>>>> e291a27c1a827b8dc5395918e939590bdb040d0b
       <Stack.Screen name='TrackDetail' component={TrackDetailScreen}/>
     </Stack.Navigator>
   );
@@ -41,6 +54,7 @@ const TrackListFlow = () => {
 
 const MainFlow = () => {
   return (
+<<<<<<< HEAD
     <Tab.Navigator
       screenOptions={{
         tabBarActiveTintColor: '#000',
@@ -78,12 +92,19 @@ const MainFlow = () => {
           headerShown: false
         }}
       />
+=======
+    <Tab.Navigator>
+      <Tab.Screen name='TrackListFlow' component={TrackListFlow} options={{headerShown: false}}/>
+      <Tab.Screen name='TrackCreate' component={TrackCreateScreen}/>
+      <Tab.Screen name='Account' component={AccountScreen}/>
+>>>>>>> e291a27c1a827b8dc5395918e939590bdb040d0b
     </Tab.Navigator>
   );
 };
 
 const App = ( ) => {
   return  (
+<<<<<<< HEAD
       <TrackProvider>
         <LocationProvider>
           <AuthProvider>
@@ -100,4 +121,18 @@ const App = ( ) => {
   );
 }
 
+=======
+    <AuthProvider>
+      <NavigationContainer ref={navigationRef}>
+        <Stack.Navigator screenOptions={{headerShown: false}}>
+          <Stack.Screen name="loginFlow" component={LoginFlow} />
+          <Stack.Screen name="mainFlow" component={MainFlow} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </AuthProvider>
+  );
+}
+
+
+>>>>>>> e291a27c1a827b8dc5395918e939590bdb040d0b
 export default App;

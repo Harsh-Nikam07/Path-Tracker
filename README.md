@@ -1,5 +1,3 @@
-"# Path-Tracker" 
-=======
 # 📍 Path Tracker
 
 A mobile application for tracking and recording your paths/routes with real-time location tracking. Perfect for runners, hikers, cyclists, or anyone who wants to keep a record of their journeys.

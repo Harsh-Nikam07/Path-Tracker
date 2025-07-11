@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 "# Path-Tracker" 
 =======
 # 📍 Path Tracker
